@@ -1,0 +1,41 @@
+class Dog:
+    def __init__(self,name,weight,tail_length):
+        self.name=name  # u siebie (self) w klasie trzymaj w zmiennej name to co jest podane w parametrze dog_name
+        self._weight=weight
+        self.tail_length=tail_length   #przypisanie parametrów dompól klasy
+
+    def bark(self):      # dokładamy metodę i wywołujemy na wybranej instancji(obiekcie)
+        print("Weow")
+
+
+    @property
+    def weight(self):
+        return self._weight
+
+
+    @weight.setter
+
+
+    def weight(self, value):
+        self._weight = value
+
+dog=Dog("Azor",12,10)
+print(dog.name)
+
+
+class Circle:
+        def __init__(self,r):
+            self._r=r
+
+
+        def area(r):
+            return r *r * 3.14
+
+c1=Circle(3)
+c2=Circle(1)
+print(c2.area())
+
+
+
+
+

@@ -1,0 +1,91 @@
+from random import random
+
+def add(a,b):
+    return a + b
+
+sum_two=add(11,21)
+print(sum_two)
+
+
+# mnożenie
+
+def multiply(a,b):
+    return a * b  # metoda oddaje wynik
+
+quotient = multiply(11,21)    # jakas zmienna przyjmuje wynik metody powyzej
+print(quotient)
+
+def volume(a,b,c):
+    return a * b * c  # metoda oddaje wynik
+
+volume_cuboid = volume(11,21,13)    # jakas zmienna przyjmuje wynik metody powyzej
+print(volume_cuboid)
+
+
+def volume(a,b,c):
+    return a * b * c  # metoda oddaje wynik
+
+volume_cuboid = volume(3,5,112)    # jakas zmienna przyjmuje wynik metody powyzej
+print(volume_cuboid)
+
+pi=3.14
+def volume_b(r):
+    return 0.75 * pi* r**3  # metoda oddaje wynik
+
+volume_ball = volume_b(10)    # jakas zmienna przyjmuje wynik metody powyzej
+print(volume_ball)
+
+if volume_cuboid > volume_ball:
+        print ("Większa jest kula")
+else:
+        print ("Większy jest prostopadłościan")
+
+
+        # def volume_cuboid (a,b,c):
+        # return a*b*c
+        #
+        # def volume_ball (r):    jezeli nie ma paramterów to nawias jest pusty
+        # return 4/3 * pi * r**3
+        #
+        # vc= volume_cuboid(3,5,12)    wywołanie metody, ktora cos zwraca przypisujemy do zmiennej
+        # print(f'cuboid volume: {vc}')
+
+        # vb = volume_ball(10)
+        # bgc= vb > vc
+        # print (bgc)    wartością bedzie true, lub false
+        # n= vb/vc
+        # print (f'Balla is {n} times larger'}
+        #
+        #
+        # metody najpierw definujemy , a potem wywołujemy'''
+
+
+def square(a):
+    return a**2  # metoda oddaje wynik
+
+result = square(21)    # jakas zmienna przyjmuje wynik metody powyzej
+print(result)
+
+result01= square(67)
+print(result01)
+
+
+'''lista=[1,3,5,11,13,21,43,56,23,9]
+
+def losowanie():
+    n= random.choice(lista)
+    n2= random.choice(lista)
+    return n,n2
+
+losowanie(lista)'''
+
+
+'''def two_elemnts (input_list):
+    a= random.choice(input_list)
+    b= random.choice(input_list)
+    return a,b
+
+l=[1,3,5,11,13,21,43,56,23,9]
+a,b=two_elemnts(l)
+print(a,b)'''
+
